@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    public final static String EXTRA_MESSAGE = "com.sputnik1973.myfirstapp.MESSAGE";
+    public final static String XTRA_MESSAGE = "com.sputnik1973.myfirstapp.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         EditText editText = (EditText) findViewById(R.id.edit_message);
         String message = editText.getText().toString();
 
-        intent.putExtra(EXTRA_MESSAGE, message);
+        intent.putExtra(XTRA_MESSAGE, message);
 
         startActivity(intent);
 
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         EditText editText = (EditText) findViewById(R.id.edit_message2);
         String message = editText.getText().toString();
 
-        intent.putExtra(EXTRA_MESSAGE, message);
+        intent.putExtra(XTRA_MESSAGE, message);
 
 
 
