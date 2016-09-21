@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">我嘅第一 App</string>
+    <string name="edit_message">輸入 message</string>
+    <string name="button_send">發出去</string>
+    <string name="edit_message2">輸入 message 2</string>
+    <string name="button_send2">發出去 2</string>
+</resources>

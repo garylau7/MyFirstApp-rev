@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mi 1st Aplicación</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Hola Mundo!</string>
+    <string name="edit_message2">Enter a message 2</string>
+    <string name="button_send2">Hola Mundo! 2</string>
+</resources>
