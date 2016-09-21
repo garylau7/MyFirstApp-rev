@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     public final static String EXTRA_MESSAGE = "com.sputnik1973.myfirstapp.MESSAGE";
@@ -13,6 +15,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //show locale
+        String locale = this.getResources().getConfiguration().locale.getDisplayName();
+
+        TextView textlocale = (TextView) findViewById(R.id.text_locale);
+        textlocale.setText(locale);
     }
 
     /** call on Button click*/
@@ -26,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_MESSAGE, message);
 
         startActivity(intent);
-
     }
 
     public void sendMessage2(View view){
