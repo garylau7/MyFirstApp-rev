@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         TextView textlocale = (TextView) findViewById(R.id.text_locale);
         textlocale.setText(locale);
+
     }
 
     /** call on Button click*/

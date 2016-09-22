@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">我嘅第一 App</string>
+    <string name="text_locale">locale string</string>
     <string name="edit_message">輸入 message</string>
     <string name="button_send">發出去</string>
     <string name="edit_message2">輸入 message 2</string>
