@@ -1,6 +1,9 @@
 package com.sputnik1973.myfirstapp;
 
 import android.content.Intent;
+import android.os.Build;
+import android.support.annotation.StringDef;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,7 +20,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //show locale
-        String locale = this.getResources().getConfiguration().locale.getDisplayName();
+        String locale = "Locale:" +  this.getResources().getConfiguration().locale.getDisplayName()
+                + "\r\n-Codename:" + Build.VERSION.CODENAME;
 
         TextView textlocale = (TextView) findViewById(R.id.text_locale);
         textlocale.setText(locale);
@@ -49,4 +53,12 @@ public class MainActivity extends AppCompatActivity {
 
         startActivity(intent);
     }
+
+private void setUpActionBar () {
+    //honeycomb or higher to set action bar
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+        android.app.ActionBar actionBar = getActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+    }
+}
 }
