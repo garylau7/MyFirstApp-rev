@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         //show locale
         String locale = "Locale:" +  this.getResources().getConfiguration().locale.getDisplayName()
-                + "\r\n-Codename:" + Build.VERSION.CODENAME;
+                + "\r\n-Codename:" + Build.VERSION.CODENAME + " " + Build.VERSION.SDK_INT;
 
         TextView textlocale = (TextView) findViewById(R.id.text_locale);
         textlocale.setText(locale);
@@ -54,11 +54,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-private void setUpActionBar () {
-    //honeycomb or higher to set action bar
-    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-        android.app.ActionBar actionBar = getActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
+    private void setUpActionBar() {
+        //honeycomb or higher to set action bar
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+            android.app.ActionBar actionBar = getActionBar();
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
     }
-}
 }
