@@ -7,7 +7,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Base.Widget.AppCompat.Button.Small">
+        android:theme="@style/Base.Theme.AppCompat.Dialog.MinWidth">
         <activity android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.Light"
             >
@@ -23,6 +23,5 @@
             />
         <activity android:name=".DisplayMessageActivity2"></activity>
     </application>
-
     <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="23" />
 </manifest>
